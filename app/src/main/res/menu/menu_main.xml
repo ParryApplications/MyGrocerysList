@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nested.paras.mygrocerylist.Activities.MainActivity">
+
+    <item
+        android:id="@+id/feedback_id"
+        android:icon="@drawable/feedback_tag"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/exit_id"
+        android:icon="@drawable/exit_tag"
+        android:title="Exit" />
+</menu>

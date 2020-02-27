@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardBackgroundColor="#D540C4FF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/alert_light_frame"
+
+            >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/heading"
+                android:textColor="#F5070F"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="casual">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/item_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/heading"
+                android:hint="Grocery Item"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColorHint="#FFFF4081" />
+
+            <EditText
+                android:id="@+id/qty_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+android:layout_below="@id/item_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:hint="Grocery Quantity"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword"
+                android:textAlignment="center"
+                android:textColorHint="#FF4081" />
+
+            <Button
+                android:id="@+id/save_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qty_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="#FF448AFF"
+                android:shadowColor="#ED130A0A"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

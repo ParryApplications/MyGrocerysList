@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nested.paras.mygroc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_main_remove"
+        android:label="Grocery List"
+        android:roundIcon="@mipmap/icon_main_remove"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <activity
+            android:name="com.nested.paras.mygroc.Activities.Logo_page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nested.paras.mygroc.Activities.DetailsActivity"
+            android:label="Grocery Details"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.nested.paras.mygroc.Activities.ListActivity"
+            android:label="Grocery List"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.nested.paras.mygroc.Activities.MainActivity"
+            android:label="Grocery Application"
+            android:theme="@style/AppTheme"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

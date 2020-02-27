@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@android:color/holo_red_dark"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#00D81818"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="8dp"
+        android:background="@android:color/holo_red_dark"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/alert_light_frame"
+            >
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/confirm"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirm"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/ic_delete"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirm"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/ic_check_black_24dp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
